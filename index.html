@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Did I Say That</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="manifest" href="manifest.json">
+</head>
+<body>
+  <h1>Did I Say That</h1>
+  <p>Paste the text you’re about to send. I’ll tell you how it sounds.</p>
+
+  <textarea id="text" placeholder="Type your text here..."></textarea>
+
+  <select id="personality">
+    <option value="direct">Direct</option>
+    <option value="soft">Soft / Dainty</option>
+    <option value="rough">Rough Around the Edges</option>
+    <option value="blunt">Blunt</option>
+  </select>
+
+  <button onclick="analyze()">Check Tone</button>
+
+  <div id="result"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
